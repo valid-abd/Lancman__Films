@@ -1,2 +1,43 @@
-@inport 'normalize'
-@inport 'fontts'
+
+@import 'normalize'
+@import 'mixins'
+@import 'fonts'
+@import 'header'
+
+@import 'animationMaus'
+@import 'mobile-button'
+
+
+
+
+
+body
+	font-family: 'Open Sans Light', sans-serif
+	color: #ffffff
+	
+
+.container
+	max-width: 1162px
+	margin: 0 auto
+
+a, li 
+	list-style: none
+	text-decoration: none
+	
+
+*, *:after, *:before 
+	box-sizing: border-box
+	
+ input, button
+	outline: 0
+	outline-offset: 0
+
+
+h1, h2, ul, a
+	margin: 0
+	padding: 0
+	
+.main
+		&-button
+			display: none
+@import 'media'

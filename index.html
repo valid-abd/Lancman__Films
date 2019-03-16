@@ -6,35 +6,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!--CSS-->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="/css/style.min.css">
 	<title>Lancman Films</title>
 </head>
 <body>
 	
-	<header class="header">
-		<div class="container container-main">
-			<nav class="main">
+	<header class="header">	
+		<nav class="main">
+			<div class="container-main container">
 				<div class="main-logo"></div>
 				<div class="main-menu">
-					<ul class="">
-						<li class="main-menu__item"><a href="#">Главная</a></li>
-						<li class="main-menu__item"><a href="#">О студии</a></li>
-						<li class="main-menu__item"><a href="#">Наши услуги</a></li>
-						<li class="main-menu__item"><a href="#">Портфолио</a></li>
-						<li class="main-menu__item"><a href="#">Контакти</a></li>
+					<ul class="main-menuList">
+						<li class="main-menuList__item"><a href="#">Главная</a></li>
+						<li class="main-menuList__item"><a href="#">О студии</a></li>
+						<li class="main-menuList__item"><a href="#">Наши услуги</a></li>
+						<li class="main-menuList__item"><a href="#">Портфолио</a></li>
+						<li class="main-menuList__item"><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-			</nav>
-			<!-- /.main -->
+				<div class="main-button">
+					<a href="#" class="main-button__icon">
+						<span class="main-button__span"></span>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!-- /.main -->
+		<div class="container">
+			<div class="header-text"> 
+				<h1 class="header-text__title">
+					Задумывались Вы <br class="br-none"> сколько потанциональных <br class="br-none"> клиентов теряете ?
+				</h1>
+			</div>	
+			<!-- /.header-text -->
+			
 		</div>
-		<div class="wrap">
-			<div class="wrap-title"></div>
-			<!-- /.wrap-title -->
-		</div>
-		<!-- /.wrap -->
 		<!-- /.container -->
+		<div class="header-maus">
+			<!-- <span class="header-maus__wheel"></span> -->
+		</div>
+		<!-- /.header-maus -->
 	</header>
 	<!-- /.header -->
 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!-- button-mobil -->
+	<script>
+		$('.main-button__icon').on('click', function (e) {
+			e.preventDefault;
+			$(this).toggleClass('btn');
+			$('.header-mobile').toggleClass('mobile');
+		});
+	</script>
+	<!-- button-mobil -->
 </body>
 </html>
