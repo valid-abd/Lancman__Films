@@ -1,0 +1,5 @@
+{
+	"typescript.tsserver.log": "normal",
+	"typescript.tsserver.trace": "messages",
+	"zenMode.hideActivityBar": false
+}
