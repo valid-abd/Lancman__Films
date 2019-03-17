@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!--CSS-->
-	<link rel="stylesheet" href="/css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Lancman Films</title>
 </head>
 <body>
@@ -29,19 +29,19 @@
 						<span class="main-button__span"></span>
 					</a>
 				</div>
+				
 			</div>
 		</nav>
 		<!-- /.main -->
-		<div class="container">
+		<nav class="header-mobile"></nav>
+
 			<div class="header-text"> 
 				<h1 class="header-text__title">
 					Задумывались Вы <br class="br-none"> сколько потанциональных <br class="br-none"> клиентов теряете ?
 				</h1>
 			</div>	
 			<!-- /.header-text -->
-			
-		</div>
-		<!-- /.container -->
+	
 		<div class="header-maus">
 			<!-- <span class="header-maus__wheel"></span> -->
 		</div>
@@ -56,7 +56,10 @@
 		$('.main-button__icon').on('click', function (e) {
 			e.preventDefault;
 			$(this).toggleClass('btn');
-			$('.header-mobile').toggleClass('mobile');
+			$('.main-menuListgit').toggleClass('open'); // анимация для главного экрана 
+			$('.header-mobile').toggleClass('mobile'); 
+		
+
 		});
 	</script>
 	<!-- button-mobil -->
