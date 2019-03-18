@@ -5,7 +5,7 @@
 		padding: 0
 		display: block
 		margin-right: 18px
-		z-index: 2
+		z-index: 7
 		&__icon 
 			margin: 0
 			display: block
@@ -21,6 +21,13 @@
 			width: 100%
 			height: 5px
 			background-color: #ffffff
+			&:hover
+				transition: 0.2s 
+				background-color: #e05050c4
+				&:before
+					background-color: #e05050c4
+				&:after
+					background-color: #e05050c4
 			&:before
 				content: ''
 				position: absolute
@@ -37,22 +44,22 @@
 				height: 5px
 				background-color: #ffffff
 				transition: 0.4s
-
+			
 .btn
 	& span
 		transform: rotate(0deg)
 		width: 0
 		transition: 0.2s
 		height: 17px
-		background-color: #1c1417
+		background-color: #fff
 		&:before
 			width: 37px
 			transform: rotate(-45deg)
-			background-color: #1c1417		
+			background-color: #fff
 		&:after
 			width: 37px
 			transform: rotate(45deg)
-			background-color: #1c1417
+			background-color: #fff
 
 .header
 	&-mobile
@@ -75,7 +82,7 @@
 			bottom: 0
 			left: 0
 			margin: auto
-			background: rgba(123, 156, 121, 0.98)
+			background: #1c1417
 			width: 100%
 			height: 0
 			padding-bottom: 100%
@@ -92,15 +99,12 @@
 
 	// анимация для меню
 .open
-	display: block !important
-	position: fixed
-	margin: auto
-	left: 50%
-	top: 50%
-	text-align: center
-	transform: translate3d(-50%,-50%,0)
-	z-index: 2
-	width: 255px
-	height: 400px
-	// transition: 5.2s
-	// opacity: 1 !important
+	width: 100%
+	height: 100%
+	transition-delay: 1s
+	opacity: 1
+.open-list
+	display: flex
+
+	
+

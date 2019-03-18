@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!--CSS-->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="./css/style.min.css">
 	<title>Lancman Films</title>
 </head>
 <body>
@@ -17,19 +17,29 @@
 				<div class="main-logo"></div>
 				<div class="main-menu">
 					<ul class="main-menuList">
-						<li class="main-menuList__item"><a href="#">Главная</a></li>
-						<li class="main-menuList__item"><a href="#">О студии</a></li>
-						<li class="main-menuList__item"><a href="#">Наши услуги</a></li>
-						<li class="main-menuList__item"><a href="#">Портфолио</a></li>
-						<li class="main-menuList__item"><a href="#">Контакты</a></li>
+						<li class="main-menuList__item main-menuList__item-1"><a href="#">Главная</a></li>
+						<li class="main-menuList__item main-menuList__item-2"><a href="#">О студии</a></li>
+						<li class="main-menuList__item main-menuList__item-3"><a href="#">Наши услуги</a></li>
+						<li class="main-menuList__item main-menuList__item-4"><a href="#">Портфолио</a></li>
+						<li class="main-menuList__item main-menuList__item-4"><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="main-button">
-					<a href="#" class="main-button__icon">
-						<span class="main-button__span"></span>
-					</a>
+
+			
+					<div class="main-button">
+						<a href="#" class="main-button__icon">
+							<span class="main-button__span"></span>
+						</a>
+					</div>
+				<div class="main-mobile">
+						<ul class="main-mobileMenu">
+						<li class="main-mobileMenu__item"><a href="#">Главная</a></li>
+						<li class="main-mobileMenu__item"><a href="#">О студии</a></li>
+						<li class="main-mobileMenu__item"><a href="#">Наши услуги</a></li>
+						<li class="main-mobileMenu__item"><a href="#">Портфолио</a></li>
+						<li class="main-mobileMenu__item"><a href="#">Контакты</a></li>
+						</ul>
 				</div>
-				
 			</div>
 		</nav>
 		<!-- /.main -->
@@ -37,7 +47,7 @@
 
 			<div class="header-text"> 
 				<h1 class="header-text__title">
-					Задумывались Вы <br class="br-none"> сколько потанциональных <br class="br-none"> клиентов теряете ?
+					Задумывались ли Вы <br class="br-none"> сколько потенциональных <br class="br-none"> клиентов теряете ?
 				</h1>
 			</div>	
 			<!-- /.header-text -->
@@ -56,7 +66,8 @@
 		$('.main-button__icon').on('click', function (e) {
 			e.preventDefault;
 			$(this).toggleClass('btn');
-			$('.main-menuList').toggleClass('open'); // анимация для главного экрана 
+			$('.main-mobile').toggleClass('open');
+			$('.main-mobileMenu').toggleClass('open-list');
 			$('.header-mobile').toggleClass('mobile'); 
 		
 

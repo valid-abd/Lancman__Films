@@ -7,18 +7,9 @@
 @media (max-width: 768px)
 	.main
 		background-color: transparent
+		&-menu
 		&-menuList
 			display: none
-			// opacity: 0
-			&__item
-				margin: 0
-				height: 80px
-				display: flex
-				align-items: center
-				justify-content: center
-				+Code-Pro-Regular
-				& a 
-					font-size: 35px
 		&-button
 			display: block
 	.header
@@ -53,6 +44,12 @@
 	.main
 		&-logo
 			background-size: 80%
+		&-mobileMenu
+			width: 200px
+			&__item
+				height: 60px
+				& a
+					font-size: 23px
 // @media (max-width: 320px)
 
 
