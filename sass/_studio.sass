@@ -1,0 +1,43 @@
+.center
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+	height: 100%
+	padding: 35px 0
+.studio
+	background: 
+		image: url('../img/main.png')
+		repeat: no-repeat
+		size: cover
+		position: center
+		color: $menu-color
+	width: 100%
+	height: 900px
+	// display: none
+	display: inline-block
+.wrap
+	width: 488px
+	height: 545px
+	background-color: #ffffff
+	opacity: 0.6
+	padding: 45px 30px
+	margin: 0
+	&-title
+		+Code-Pro-Regular
+		font-size: 31px
+		text-align: center
+		color: #000000
+		&:after
+			content: ''
+			display: block
+			width: 100px
+			height: 2px
+			background-color: #000000
+			margin: 0 auto
+			position: relative
+			top: 35px
+	&-discr
+		margin-top: 4em
+		color: #383838
+		font-size: 24px
+		text-align: center
