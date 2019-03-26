@@ -1,14 +1,39 @@
+.center-serves
+	justify-content: center
+	display: flex
+	align-items: center
+	flex-wrap: wrap
 .serves
 	background-color: #000000
-	padding: 170px 0
+	padding: 100px 0
 	&-block
 		width: 360px
 		height: 613px
 		border-radius: 10px
 		background-image: linear-gradient(to top, #000001 0%, #ffffff 100%)
 		opacity: 0.4
-		padding: 38px 15px
+		padding: 60px 25px
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin: 0 13px
+		margin-top: 20px
 		&__img
+			background:
+				repeat: no-repeat
+				position: center
+				color: transparent
+				size: cover
+			width: 200px
+			height: 200px
+			margin-bottom: 24px
+			&-1
+				background-image: url('../img/iconca/idea.png')
+			&-2
+				background-image: url('../img/iconca/handshake.png')
+			&-3
+				background-image: url('../img/iconca/time.png')
 		&__discr
-			color: #b4b4b4
-			font-style: 20px
+			color: #000000
+			font-size: 20px
+			text-align: center

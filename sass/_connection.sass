@@ -1,0 +1,125 @@
+.half
+	height: 100%
+	display: flex
+.connection
+	&-wrap
+		height: auto
+		padding-top: 68px
+		padding-bottom: 34px
+	&-title
+		text-shadow: 0 8px 9px rgba(0, 0, 0, 0.25)
+		color: #000000
+		letter-spacing: 3px
+		text-align: center
+		font-size: 50px
+		+Code-Pro-Regular
+	&-subtitle
+		color: #333333
+		font-size: 17px
+		letter-spacing: 1.02px
+		margin-bottom: 95px
+		text-align: center
+
+.contacts
+	width: 50%
+	height: 100%
+	&-title
+		color: #000000
+		font-size: 24px
+		letter-spacing: 1.44px
+		margin-bottom: 31px
+	&-information
+		&__list
+			display: flex
+			align-content: space-between
+			align-items: center
+			margin-bottom: 25px
+			&-img
+				width: 35px
+				height: 35px
+				margin-right: 42px
+				background:
+					repeat: no-repeat
+					position: center
+					size: cover
+				&__1
+					background-image: url('../img/contact/location.png')
+				&__2
+					background-image: url('../img/contact/email.png')
+				&__3
+					background-image: url('../img/contact/call.png')
+			&-text
+				color: #333333
+				font-size: 20px
+				letter-spacing: 1.2px
+				& a
+					color: #333333
+	&-map
+		margin-top: 35px
+		width: 100%
+		height: auto
+		position: relative
+		&:before
+			content: ''
+			background-color: $menu-color
+			opacity: .3
+			width: 100%
+			height: 100%
+			position: absolute
+			z-index: 1
+			transition: .5s
+		&:hover
+			&:before
+				opacity: 0
+
+.request
+	width: 50%
+	height: 100%
+	// background-color: #333333
+	padding-left: 110px
+	position: relative
+	&:before
+		content: ''
+		background-color: #242424
+		width: 3px
+		height: 587px
+		position: absolute
+		left: 2%
+		top: 6%
+
+	&-title
+		color: #000000
+		font-size: 24px
+		letter-spacing: 1.44px
+		margin-bottom: 47px
+	&-form
+		display: flex
+		flex-direction: column
+		width: 350px
+		&__input
+			height: 38px
+			width: 100%
+			margin-bottom: 25px
+			color: #cccccc
+			font-size: 19px
+			letter-spacing: 1.14px
+			border-bottom: 2px solid $menu-color
+			padding-left: 15px
+		&__textarea
+			height: 138px
+		&__button
+			width: 100%
+			height: 58px
+			color: #333333 !important
+			background-color: transparent
+			border: 2px solid $menu-color
+				radius: 39px
+			color: $black
+			font-size: 24px
+			transition: .5s
+			&:hover
+				background-color: #000000
+				color: #ffffff !important
+				
+			
+

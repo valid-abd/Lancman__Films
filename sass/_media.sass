@@ -1,9 +1,54 @@
 @media (max-width: 1199px)
- .container
-	 width: 95%
-	
-// @media (max-width: 992px)
+	.container
+		width: 95%
+
+	.request
+		padding-left: 63px
+
+@media (max-width: 992px)
+	.section
+		height: auto
+	.communication
+		&-form
+			&__input
+				width: 349px
 	////95%
+	.team
+		&-person
+			border: 2px solid #333333
+			margin-top: 25px
+		&-wrap
+			height: auto
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+	.contacts
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 90%
+		&-title
+			align-items: center
+		&-map
+			width: 95%
+			height: auto
+	.half
+		display: block
+		width: 100%
+	.connection
+		height: auto
+	.request
+		width: 100%
+		padding: 0
+		display: flex
+		flex-direction: column
+		align-items: center
+		&:before
+			display: none
+		&-title
+			text-align: center
 @media (max-width: 768px)
 	.main
 		background-color: transparent
@@ -17,7 +62,28 @@
 			&__title
 				font-size: 35px
 	.center
-		justify-content: center
+		&-form
+			justify-content: space-around
+	.communication
+		height: 29em
+		&-form
+			&__input
+				border-radius: 10px
+				&-name
+					// margin-right: 0
+					margin: 0 auto
+	.slider
+		width: 325px
+		&-subtitle
+			margin: 15px 23px 0 23px
+	.price
+		&-slider
+			width: 100%
+	.arrow
+		&-left
+			left: 10%
+		&-right
+			right: 10%
 @media (max-width: 576px)
 	.container
 		width: 98%
@@ -31,6 +97,32 @@
 		&-discr
 			margin-top: 2.6em
 			font-size: 23px
+	.communication
+		&-title
+			font-size: 40px
+		&-form
+			width: 100%
+			&__input
+				width: 320px
+	.team
+		&-person
+			margin: 0
+			margin-top: 15px
+	.connection
+		&-title
+			font-size: 35px
+		&-subtitle
+			font-size: 14px
+	.contacts
+		height: 100%
+		&-information
+			&__list
+				flex-direction: column
+				&-img
+					margin-bottom: 12px
+				&-text
+					text-align: center
+	
 @media (max-width: 456px)
 	.header
 		&-text
@@ -52,6 +144,38 @@
 		&-discr
 			margin-top: 1.6em
 			font-size: 21px
+	.serves
+		&-block 
+			width: 336px
+			height: 575px
+			&__discr
+				font-size: 16px
+				line-height: 1.3
+			&__img
+				background-size: 95%
+	.communication
+		&-form
+			&__input
+				width: 300px
+	.slider
+		width: 305px
+		height: 500px !important
+		&-subtitle
+			margin: 15px 23px 0 23px
+	.arrow
+		&-left
+			left: 0
+		&-right
+			right: 0
+	.slick-list
+		padding: 0
+	.connection
+		&-subtitle
+			font-size: 12px
+			margin-bottom: 80px
+	.request
+		&-form
+			width: 90%
 @media (max-width: 380px)
 	.header
 		&-text
@@ -78,6 +202,56 @@
 	.block
 		&-number
 			margin-bottom: 0
+	.serves
+		&-block 
+			width: 300px
+			height: 505px
+			padding: 24px 25px
+			&__discr
+				font-size: 13px
+			&__img
+				background-size: 86%
+				margin: 0
+	.communication
+		&-title
+			font-size: 32px
+		&-form
+			width: 95%
+			&__input
+				width: 90%
+				
+			&__button
+				width: 100%
+				margin: 0
+				padding: 0
+				height: 58px
+	.price
+		&-title
+			font-size: 38px
+	.slider
+		width: 280px
+		height: 480px !important
+		&-title
+			font-size: 26px
+		&-subtitle
+			margin: 15px 22px 0 22px
+			font-size: 15px
+	.team
+		&-title
+			margin-bottom: 50px
+			font-size: 45px
+		&-person
+			width: auto
+			padding: 39px 17px
+			&__img
+				background-size: 95%
+				width: 260px
+				background-color: transparent
+	.contacts
+		&-information
+			&__list
+				&-text
+					font-size: 17px
 // @media (max-width: 320px)
 
 

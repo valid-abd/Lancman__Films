@@ -1,0 +1,169 @@
+.price
+	background-color: #101010
+	height: 895px
+	// width: 100px
+	padding: 68px 0
+	position: relative
+	&-title
+		+Code-Pro-Light
+		font-size: 48px
+		letter-spacing: 2.88px
+		color: #ffffff
+		text-align: center
+		margin-bottom: 89px
+	&-slider
+		width: 93%
+		// max-width: 100%
+		margin: 0 auto
+		height: 600px 
+		text-align: center
+		
+.slider
+	width: 360px 
+	height: 540px !important
+	border: 2px solid #333333
+	background:
+		color: #fff
+		image: linear-gradient(to top, #333333 0%, rgba(51, 51, 51, 0) 100%)
+	padding: 27px 0
+	text-align: center
+	position: relative
+	z-index: 10
+	display: flex !important
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	overflow: hidden
+	margin: 13px 0
+  
+	&-title
+		+Code-Pro-Light
+		font-size: 28px
+		color: $menu-color
+		text-align: center
+		margin-bottom: 27px
+	&-subtitle
+		font-size: 18px
+		margin: 15px 53px 0 53px
+		height: 100%
+		color: $menu-color
+	&-price
+		+Code-Pro-Light
+		font-size: 18px
+		&__number
+			font-size: 45px
+			position: relative
+			&:before
+				content: ''
+				width: 21px
+				height: 21px
+				position: absolute
+				background:
+					image: url('../img/slider/ruble.png')
+					repeat: no-repeat
+					size: cover
+					position: center
+				top: -6px
+				right: -20px
+		
+	&-button
+		font-size: 24px
+		width: 225px
+		min-height: 58px
+		border-radius: 29px
+		background-color: transparent
+		border: 1px solid #ffffff
+		cursor: pointer
+		z-index: 3
+		&:hover
+			background-color: #ffffff3f
+			transition: .5s
+
+
+			// +Code-Pro-Light
+	&-img
+		width: 125px
+		min-height: 125px
+		// margin: auto
+		background: 
+			repeat: no-repeat
+			size: cover
+			position: center
+		&__1
+			background-image: url('../img/slider/slider_1.png')
+		&__2
+			background-image: url('../img/slider/slider_2.png')
+		&__3
+			background-image: url('../img/slider/slider_3.png')
+		&__4
+			background-image: url('../img/slider/slider_4.png')
+		&__5
+			background-image: url('../img/slider/slider_5.png')
+
+.arrow
+	width: 26px
+	height: 50px
+	border: none
+	position: absolute
+	z-index: 5
+	opacity: 0.5
+	background: 
+		repeat: no-repeat
+		size: cover
+		position: center
+		color: transparent
+	&-left
+		background-image: url('../img/slider/arrow/left-arrow.png')
+		top: 45%
+		left: 18%
+	&-right
+		background-image: url('../img/slider/arrow/right-arrow.png')
+		top: 45%
+		right: 18%
+	&:hover
+		opacity: 1
+.slick
+	&-slide
+		transition: transform .4s
+		&:after 
+			content: ''
+			position: absolute
+			z-index: 2
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background: rgba(0,0,0,.6)
+			transition: transform .4s
+
+.slick-center
+	&:after 
+  	opacity: 0
+	&:hover
+		box-shadow: 0 5px 15px $menu-color
+
+.slider.slick-slide 
+	transform: scale(0.8) translate(436px)
+	transition: transform .4s
+	// z-index: 5
+  // height: 240px
+.slider.slick-slide.slick-center + .slick-slide 
+	transform: scale(0.9) translate(-180px)
+	z-index: 9
+
+.slider.slick-slide.slick-center + .slick-slide + .slider.slick-slide 
+  transform: scale(0.8) translate(-450px)
+  z-index: 5
+
+// .slider.slick-slide.slick-cloned
+// 	transform: scale(0.8) translate(-250px)
+// 	// transform: scale(0.8) translate(450px)
+// 	z-index: 5
+
+.slider.slick-slide.slick-active
+  transform: scale(0.9) translate(180px)
+
+.slider.slick-center.slick-slide
+  /* margin: 0 -10%; */
+  transform: scale(1)
+  z-index: 30

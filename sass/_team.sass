@@ -1,0 +1,72 @@
+.team
+	height: auto
+	background-color: #000000
+	padding: 54px 0
+	&-title
+		margin-bottom: 56px
+		+Code-Pro-Regular
+		text-align: center
+		font-size: 48px
+	&-wrap
+		display: flex
+		// flex-direction: column
+		justify-content: space-evenly
+		align-items: center
+		flex-wrap: wrap
+	&-person
+		padding: 39px 31px
+		width: 360px
+		height: 636px
+		border-radius: 15px
+		margin: 15px 25px
+		&:hover
+			content: ''
+			position: relative
+			transition: .5s
+			box-shadow: 0 4px 32px $menu-color
+		&__name
+			font-size: 28px
+			letter-spacing: 1.68px
+			text-align: left
+			margin-top: 29px
+		&__skill
+			font-size: 25px
+			color: #666666
+			+Cambria-Italic
+			margin-top: 15px
+		&__img
+			// margin-top: 29px
+			background:
+				repeat: no-repeat
+				position: center
+				color: $menu-color
+				size: cover
+			width: 293px
+			height: 343px
+			margin: auto
+			&-1
+				background-image: url('../img/team/team-1.jpg')
+			&-2
+				background-image: url('../img/team/team-2.jpg')
+			&-3
+				background-image: url('../img/team/team-3.jpg')
+			&-4
+				background-image: url('../img/team/team-4.jpg')
+		&__messenger
+			display: flex
+			&-icon
+				background:
+					repeat: no-repeat
+					position: center
+				margin: 10px 20px 0 0
+				width: 32px
+				height: 30px
+				&:hover
+					opacity: .5
+			&-inst
+				background-image: url('../img/team/messenger/instagram-logo.png')	
+			&-vk
+				background-image: url('../img/team/messenger/vk-logo.png')	
+			&-watsp
+				background-image: url('../img/team/messenger/whatsapp-logo.png')
+			

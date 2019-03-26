@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!--CSS-->
 	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/slick.css">
 	<title>Lancman Films</title>
 </head>
 <body>
@@ -77,7 +78,7 @@
 	<!-- /.studio -->
 									
 
-	<div class="comtainer">
+	<div class="container">
 		<section class="section">
 
 			<div class="block">
@@ -98,20 +99,34 @@
 	</div> <!--/.container-->
 
 	<section class="serves">
-		<div class="container center">
+		<div class="container center-serves">
 			<div class="serves-block">
-				<div class="serves-block__img"></div>
-				<div class="serves-block__discr"></div>
+				<div class="serves-block__img serves-block__img-1"></div>
+				<div class="serves-block__discr">Мы разрабатываем концепцию проекта с учетом Ваших пожеланий. Создаём основную идею и сюжет ролика,тем самым экономя Ваше
+				время и деньги.</div>
 			</div>
 			<!-- /.serves-block -->
 			<div class="serves-block">
-				<div class="serves-block__img"></div>
-				<div class="serves-block__discr"></div>
+				<div class="serves-block__img serves-block__img-2"></div>
+				<div class="serves-block__discr">Возможности нашей студии
+				позволяют создавать видео
+				любого направления и сложности,
+				от видео-презентаций
+				до музыкальных клипов,
+				так как в штате студии
+				только опытные специалисты
+				всех этапов видеопроизводства.
+				Каждый занимается своей
+				частью работы.</div>
 			</div>
 			<!-- /.serves-block -->
 			<div class="serves-block">
-				<div class="serves-block__img"></div>
-				<div class="serves-block__discr"></div>
+				<div class="serves-block__img serves-block__img-3"></div>
+				<div class="serves-block__discr">Все вышеперечисленные пункты
+				Ваших выгод указывают
+				на главный фактор -
+				короткие сроки изготовления
+				видео (от 2-х до 14 дней)</div>
 			</div>
 			<!-- /.serves-block -->
 		</div>
@@ -119,9 +134,255 @@
 	</section>
 	<!-- /.serves -->
 
+	<div class="communication">
+		<div class="container center-form">
+			<div class="communication-title">Оставьте заявку</div>
+			<form action="#" class="communication-form">
+				<input type="text" class="communication-form__input communication-form__input-name" name="user-name" placeholder="Ваше имя" maxlength="25" required>
+				<input type="tel" class="communication-form__input" name="user-phone" placeholder="Контактный номер" maxlength="18" required data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="off">
+				<button type="submit" class="communication-form__button">отправить заявку</button>
+			</form> <!--/. communication-form-->
+		</div> <!--/. container-->
+	</div> <!--/. communication-->
+
+	<section class="team">
+		<div class="container">
+			<h3 class="team-title">НАША КОМАНДА</h3>
+				<div class="team-wrap">
+					<div class="team-person">
+						<div class="team-person__img team-person__img-1"></div>
+						<div class="team-person__name">Игорь <br> Ланцман</div>
+						<div class="team-person__skill">Оператор <span>Монтажер</span> </div>
+						<div class="team-person__messenger">
+							<a href="" class="team-person__messenger-icon team-person__messenger-inst"></a>					
+							<a href="" class="team-person__messenger-icon team-person__messenger-vk"></a>
+							<a href="tel:+" class="team-person__messenger-icon team-person__messenger-watsp"></a>
+						</div>
+					</div> <!--/.team-person-->
+					<div class="team-person">
+						<div class="team-person__img team-person__img-2"></div>
+						<div class="team-person__name">Алексей <br>Измайлов</div>
+						<div class="team-person__skill">Оператор <span>Монтажер</span></div>
+						<div class="team-person__messenger">
+							<a href="" class="team-person__messenger-icon team-person__messenger-inst"></a>
+							<a href="" class="team-person__messenger-icon team-person__messenger-vk"></a>
+							<a href="tel:+" class="team-person__messenger-icon team-person__messenger-watsp"></a>
+						</div>
+					</div> <!--/.team-person-->
+					<div class="team-person">
+						<div class="team-person__img team-person__img-3"></div>
+						<div class="team-person__name">Роман <br> Карташев</div>
+						<div class="team-person__skill"> Сценарист </div>
+						<div class="team-person__messenger">
+							<a href="https://vk.com/id209396076" class="team-person__messenger-icon team-person__messenger-inst"></a>
+							<a href="https://vk.com/id209396076" class="team-person__messenger-icon team-person__messenger-vk"></a>
+							<a href="tel:+" class="team-person__messenger-icon team-person__messenger-watsp"></a>
+						</div> 
+					</div> <!--/.team-person-->
+					<div class="team-person">
+						<div class="team-person__img team-person__img-4"></div>
+						<div class="team-person__name">Полина  <br> Широкова</div>
+						<div class="team-person__skill">Монтажер</div>
+						<div class="team-person__messenger">
+							<a href="" class="team-person__messenger-icon team-person__messenger-inst"></a>
+							<a href=""class="team-person__messenger-icon team-person__messenger-vk"></a>
+							<a href="tel:+" class="team-person__messenger-icon team-person__messenger-watsp"></a>
+						</div>
+					</div> <!--/.team-person-->
+				</div> <!--/.team-wrap-->
+		</d> <!--/.container-->
+	</section> <!--/.team-->
+
+	<div class="price">
+		<div class="container">
+			<h1 class="price-title">Наши услуги</h1>
+			<!-- /.price-title -->
+			<div class="price-slider">
+				<div class="slider">
+					<h3 class="slider-title">имиджевый</h3>
+					<div class="slider-img slider-img__1"></div>
+					<p class="slider-subtitle">Демонстрация специфики вашего бизнеса и услуг.
+					Создания имиджа компании и повышения доверия клиентов.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+
+				<div class="slider">
+					<h3 class="slider-title">видеоотчет</h3>
+					<div class="slider-img slider-img__2"></div>
+					<p class="slider-subtitle">Яркий эмоциональный фильм и/или клип с Вашего мероприятия.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+
+				<div class="slider">
+					<h3 class="slider-title">Музыкальный клип</h3>
+					<div class="slider-img slider-img__3"></div>
+					<p class="slider-subtitle">Постановочная съемка клипа под вашу композицию.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+				
+				<div class="slider">
+					<h3 class="slider-title">Презентационный</h3>
+					<div class="slider-img slider-img__4"></div>
+					<p class="slider-subtitle">Фильм о компании, её достижениях, руководстве и сотрудниках.
+					Используется на выставках, бизнес-форумах, и т.д.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+				
+				<div class="slider">
+					<h3 class="slider-title">рекламный</h3>
+					<div class="slider-img slider-img__5"></div>
+					<p class="slider-subtitle">Предоставить целевой аудитории наглядную информацию о
+					Ваших продуктах и услугах.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+
+				<div class="slider">
+					<h3 class="slider-title">имиджевый</h3>
+					<div class="slider-img slider-img__1"></div>
+					<p class="slider-subtitle">Демонстрация специфики вашего бизнеса и услуг.
+						Создания имиджа компании и повышения доверия клиентов.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+				
+				<div class="slider">
+					<h3 class="slider-title">видеоотчет</h3>
+					<div class="slider-img slider-img__2"></div>
+					<p class="slider-subtitle">Яркий эмоциональный фильм и/или клип с Вашего мероприятия.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+				
+				<div class="slider">
+					<h3 class="slider-title">Музыкальный клип</h3>
+					<div class="slider-img slider-img__3"></div>
+					<p class="slider-subtitle">Постановочная съемка клипа под вашу композицию.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+				
+				<div class="slider">
+					<h3 class="slider-title">Презентационный</h3>
+					<div class="slider-img slider-img__4"></div>
+					<p class="slider-subtitle">Фильм о компании, её достижениях, руководстве и сотрудниках.
+						Используется на выставках, бизнес-форумах, и т.д.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+				
+				<div class="slider">
+					<h3 class="slider-title">рекламный</h3>
+					<div class="slider-img slider-img__5"></div>
+					<p class="slider-subtitle">Предоставить целевой аудитории наглядную информацию о
+						Ваших продуктах и услугах.</p>
+					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+					<button class="slider-button">Заказать</button>
+				</div>
+				<!-- /.slider -->
+
+			</div>
+			<!-- /.prace-wrap -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.price -->
+
+	<div class="connection">
+		<div class="container">
+			<div class="connection-wrap">
+				<h3 class="connection-title">Связаться с нами</h3>
+				<!-- /.connection-title -->
+				<p class="connection-subtitle">Начните свой проект сегодня или, может быть, вы просто хотите сказать « Привет »?</p>
+				<!-- /.connection-subtitle -->
+				<div class="half">
+
+					<div class="contacts">
+						<h4 class="contacts-title">Контактная информация</h4>
+
+						<div class="contacts-information">
+
+							<div class="contacts-information__list">
+								<div class="contacts-information__list-img contacts-information__list-img__1"></div>
+								<div class="contacts-information__list-text">Ленинградская ул., 77 <br> Самара, Самарская обл., 443020</div>
+							</div> <!--/.contacts-nformation__list-->
+
+							<div class="contacts-information__list">
+								<div class="contacts-information__list-img contacts-information__list-img__2"></div>
+								<div class="contacts-information__list-text">Lancmanprod@mail.ru</div>
+							</div> <!--/.contacts-nformation__list-->
+
+							<div class="contacts-information__list">
+								<div class="contacts-information__list-img contacts-information__list-img__3"></div>
+								<div class="contacts-information__list-text"><a href="tel:+79276999455">+7 (927) 699-94-55</a></div>
+							</div> <!--/.contacts-nformation__list-->
+
+						</div> <!--/.contacts-information-->
+						<div class="contacts-map">
+							<script  charset="utf-8" async
+								src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1475b8a0144cd77a2e9a8ea3c3d073769d05ecb4d750e9e5f3e5fa73504f0158&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
+						</div>
+					</div>
+					<!-- /.connection-contacts -->
+
+					<div class="request">
+						<h4 class="request-title">Оставить заявку</h4>
+						<form action="#" class="request-form">
+							<input type="text" class="request-form__input" placeholder="Your Name" name="user-name">
+							<input type="email" class="request-form__input" placeholder="Your Email" name="user-email" readonly>
+							<input type="tel" class="request-form__input" maxlength="18" placeholder="Your Phone" required data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="off">
+							<textarea class="request-form__textarea request-form__input" placeholder="Your Message..." name="" id="" cols="30" rows="10"></textarea>
+							<button type="submit" class="request-form__input request-form__button" >ОТПРАВИТЬ </butto>
+						</form>
+					</div> <!--/.request-->
+				</div>
+				<!-- /.connection-form -->
+			</div>
+			<!-- /.connection-wrap -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.connection -->
+
+<footer class="footer">
+	<div class="container center-footer">
+		<div class="footer-logo"></div>
+		<!-- /.footer-logo -->
+		<div class="footer-icon">
+			<div class="footer-icon__img"></div>
+			<div class="footer-icon__img"></div>
+			<div class="footer-icon__img"></div>
+			<div class="footer-icon__img"></div>
+			<div class="footer-icon__img"></div>
+		</div>
+		<!-- /.footer-icon -->
+		<div class="footer-rights">© 2019 Lancman Films. <br>
+		Все права защищены. Дизайн</div>
+		<!-- /.footer-rights -->
+	</div>
+	<!-- /.containet -->
+</footer>
+<!-- /.footer -->
+
 											
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="./js/rellax.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/slider.js"></script>
 <script>
   // Accepts any class name
   var rellax = new Rellax('.rellax');
