@@ -8,13 +8,13 @@
 		padding-bottom: 34px
 	&-title
 		text-shadow: 0 8px 9px rgba(0, 0, 0, 0.25)
-		color: #000000
+		color: $black
 		letter-spacing: 3px
 		text-align: center
 		font-size: 50px
 		+Code-Pro-Regular
 	&-subtitle
-		color: #333333
+		color: $dark-grey
 		font-size: 17px
 		letter-spacing: 1.02px
 		margin-bottom: 95px
@@ -24,7 +24,7 @@
 	width: 50%
 	height: 100%
 	&-title
-		color: #000000
+		color: $black
 		font-size: 24px
 		letter-spacing: 1.44px
 		margin-bottom: 31px
@@ -49,11 +49,16 @@
 				&__3
 					background-image: url('../img/contact/call.png')
 			&-text
-				color: #333333
+				color: $dark-grey
 				font-size: 20px
 				letter-spacing: 1.2px
 				& a
-					color: #333333
+					color: $dark-grey
+					transition: .5s
+					&:hover
+						color: $black
+						text-shadow: 4px 2px 1px rgba(0,0,0,0.55)
+						transition: .5s
 	&-map
 		margin-top: 35px
 		width: 100%
@@ -75,7 +80,7 @@
 .request
 	width: 50%
 	height: 100%
-	// background-color: #333333
+	// background-color: $dark-grey
 	padding-left: 110px
 	position: relative
 	&:before
@@ -88,7 +93,7 @@
 		top: 6%
 
 	&-title
-		color: #000000
+		color: $black
 		font-size: 24px
 		letter-spacing: 1.44px
 		margin-bottom: 47px
@@ -100,26 +105,42 @@
 			height: 38px
 			width: 100%
 			margin-bottom: 25px
-			color: #cccccc
+			color: $light-gray
 			font-size: 19px
 			letter-spacing: 1.14px
 			border-bottom: 2px solid $menu-color
 			padding-left: 15px
+			position: relative
+			display: block
+			&:focus
+				color: #242424
+				transition: .7s
+				border-bottom: 2px solid $light-gray
+			// &-focus
+			// 	&:after
+			// 		content: ""
+			// 		position: absolute
+			// 		bottom: 0
+			// 		left: 50%
+			// 		width: 60%
+			// 		height: 2px
+			// 		margin-left: -30%
+			// 		background: #000
 		&__textarea
 			height: 138px
 		&__button
 			width: 100%
 			height: 58px
-			color: #333333 !important
+			color: $dark-grey !important
 			background-color: transparent
 			border: 2px solid $menu-color
 				radius: 39px
-			color: $black
+			color: $white
 			font-size: 24px
 			transition: .5s
 			&:hover
-				background-color: #000000
-				color: #ffffff !important
+				background-color: $black
+				color: $white !important
 				
 			
 
