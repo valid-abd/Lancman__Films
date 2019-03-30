@@ -139,7 +139,7 @@
 	<div class="communication">
 		<div class="container center-form">
 			<div class="communication-title">Оставьте заявку</div>
-			<form action="#" class="communication-form">
+			<form class="communication-form" method="POST" action="php/mailer//smart.php">
 				<input type="text" id="user-name" class="communication-form__input communication-form__input-name user-name" name="user-name" placeholder="Ваше имя" maxlength="25" required>
 				<input type="tel" class="communication-form__input" name="user-phone" placeholder="Контактный номер" maxlength="18" required data-mask="+7 (000) 000-00-00"  autocomplete="off">
 				<button type="submit" class="communication-form__button">отправить заявку</button>
@@ -342,11 +342,11 @@
 
 					<div class="request">
 						<h4 class="request-title">Оставить заявку</h4>
-						<form action="#" class="request-form">
+						<form action="php/mailer//smart.php" class="request-form" method="POST">
 							<input type="text" id="user-name" class="request-form__input request-form__input-focus user-name" placeholder="Name" maxlength="25" name="user-name">
 							<input type="email" class="request-form__input request-form__input-focus" placeholder="Email" name="user-email" >
-							<input type="tel" class="request-form__input" maxlength="18" placeholder="Phone" required data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="off">
-							<textarea class="request-form__textarea request-form__input" placeholder="Message..." name="" id="" cols="30" rows="10"></textarea>
+							<input type="tel" class="request-form__input" maxlength="18" placeholder="Phone" name="user-phone" required data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="off">
+							<textarea class="request-form__textarea request-form__input" placeholder="Message..." name="user-comment" id="" cols="30" rows="10"></textarea>
 							<button type="submit" class="request-form__input request-form__button" >ОТПРАВИТЬ </butto>
 						</form>
 					</div> <!--/.request-->
@@ -386,6 +386,21 @@
 <script src="./js/slick.min.js"></script>
 <script src="./js/slider.js"></script>
 
+<script>
+	$('form').submit(function (event) {
+			event.preventDefault();
+			$.ajax({
+				type: "POST",
+				url: "php/mailer/smart.php",
+				data: $(this).serialize()
+			}).done(function () {
+				$(this).find("input").val("");
+				alert("Сообщение успешно отправлено");
+				$("form").trigger("reset");
+			});
+			return false;
+		});
+</script>
 
 <script>
   // Accepts any class name
