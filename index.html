@@ -139,7 +139,7 @@
 	<div class="communication">
 		<div class="container center-form">
 			<div class="communication-title">Оставьте заявку</div>
-			<form class="communication-form" method="POST" action="php/mailer//smart.php">
+			<form class="communication-form" method="POST" action="mailer/smart.php">
 				<input type="text" id="user-name" class="communication-form__input communication-form__input-name user-name" name="user-name" placeholder="Ваше имя" maxlength="25" required>
 				<input type="tel" class="communication-form__input" name="user-phone" placeholder="Контактный номер" maxlength="18" required data-mask="+7 (000) 000-00-00"  autocomplete="off">
 				<button type="submit" class="communication-form__button">отправить заявку</button>
@@ -294,7 +294,7 @@
 
 					<div class="request">
 						<h4 class="request-title">Оставить заявку</h4>
-						<form action="php/mailer//smart.php" class="request-form" method="POST">
+						<form action="mailer/smart.php" class="request-form" method="POST">
 							<input type="text" id="user-name" class="request-form__input request-form__input-focus user-name" placeholder="Name" maxlength="25" name="user-name">
 							<input type="email" class="request-form__input request-form__input-focus" placeholder="Email" name="user-email" >
 							<input type="tel" class="request-form__input" maxlength="18" placeholder="Phone" name="user-phone" required data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="off">
@@ -316,11 +316,15 @@
 		<div class="footer-logo"></div>
 		<!-- /.footer-logo -->
 		<div class="footer-icon">
-			<div class="footer-icon__img"></div>
-			<div class="footer-icon__img"></div>
-			<div class="footer-icon__img"></div>
-			<div class="footer-icon__img"></div>
-			<div class="footer-icon__img"></div>
+			<div class="footer-icon__img footer-icon__img-1">
+				<a href="#"></a>
+			</div>
+			<div class="footer-icon__img footer-icon__img-2">
+				<a href="#"></a>
+			</div>
+			<div class="footer-icon__img footer-icon__img-3">
+				<a href="#"></a>
+			</div>
 		</div>
 		<!-- /.footer-icon -->
 		<div class="footer-rights">© 2019 Lancman Films. <br>
@@ -340,7 +344,7 @@
 				<!-- <div class="modal-form__callback">
 					<a href="tel:89276999455">+7 (927) 699-94-55</a>
 				</div> -->
-				<form action="php/mailer//smart.php" method="POST" class="modal-form__form">
+				<form action="mailer/smart.php" method="POST" class="modal-form__form">
 					<input type="text" class="modal-form__form-input" maxlength="25" name="user-name" placeholder="Ваше имя">
 					<input type="tel" class="modal-form__form-input" name="user-phone" required data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="off" placeholder="Ваш телефон">
 					<input type="submit" placeholder="отправить" class="modal-form__form-button" >
@@ -365,7 +369,7 @@
 				data: $(this).serialize()
 			}).done(function () {
 				$(this).find("input").val("");
-				alert("Сообщение успешно отправлено");
+				 alert("Сообщение успешно отправлено");
 				$('модальное окно');
 				$("form").trigger("reset");
 			});
