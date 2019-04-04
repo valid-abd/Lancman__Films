@@ -59,7 +59,7 @@
 			<a href="#mouse2"  class="header-maus"></a>
 		</div>
 			<!-- <span class="header-maus__wheel"></span> -->
-		</div>
+		<!-- </div> -->
 		<!-- /.header-maus -->
 	</header>
 	<!-- /.header -->
@@ -140,7 +140,7 @@
 		<div class="container center-form">
 			<div class="communication-title">Оставьте заявку</div>
 			<form class="communication-form" method="POST" action="mailer/smart.php">
-				<input type="text" id="user-name" class="communication-form__input communication-form__input-name user-name" name="user-name" placeholder="Ваше имя" maxlength="25" required>
+				<input type="text" class="communication-form__input communication-form__input-name user-name" name="user-name" placeholder="Ваше имя" maxlength="25" required>
 				<input type="tel" class="communication-form__input" name="user-phone" placeholder="Контактный номер" maxlength="18" required data-mask="+7 (000) 000-00-00"  autocomplete="off">
 				<button type="submit" class="communication-form__button">отправить заявку</button>
 			</form> <!--/. communication-form-->
@@ -192,7 +192,7 @@
 						</div> -->
 					</div> <!--/.team-person-->
 				</div> <!--/.team-wrap-->
-		</d> <!--/.container-->
+		</div> <!--/.container-->
 	</section> <!--/.team-->
 
 	<div class="price" id="4">
@@ -295,12 +295,12 @@
 					<div class="request">
 						<h4 class="request-title">Оставить заявку</h4>
 						<form action="mailer/smart.php" class="request-form" method="POST">
-							<input type="text" id="user-name" class="request-form__input request-form__input-focus user-name" placeholder="Name" maxlength="25" name="user-name">
+							<input type="text" class="request-form__input request-form__input-focus user-name" placeholder="Name" maxlength="25" name="user-name">
 							<input type="email" class="request-form__input request-form__input-focus" placeholder="Email" name="user-email" >
 							<input type="tel" class="request-form__input" maxlength="18" placeholder="Phone" name="user-phone" required data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="off">
-							<textarea class="request-form__textarea request-form__input" placeholder="Message..." name="user-comment" id="" cols="30" rows="10"></textarea>
-							<button type="submit" class=" request-form__button" >ОТПРАВИТЬ </butto>
-						</form>
+							<textarea class="request-form__textarea request-form__input" placeholder="Message..." name="user-comment"  cols="30" rows="10"></textarea>
+							<button type="submit" class=" request-form__button" >ОТПРАВИТЬ </button>
+					</form>
 					</div> <!--/.request-->
 				</div>
 				<!-- /.connection-form -->
