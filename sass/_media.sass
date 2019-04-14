@@ -4,6 +4,10 @@
 
 	.request
 		padding-left: 63px
+	
+	.portfolio
+		&-item
+			justify-content: center
 
 @media (max-width: 992px)
 	.section
@@ -85,6 +89,11 @@
 			left: 10%
 		&-right
 			right: 10%
+	.portfolio
+		&-filter
+			justify-content: center
+			align-content: space-around
+			height: 3.5em
 @media (max-width: 576px)
 	.container
 		width: 98%
@@ -95,6 +104,7 @@
 				text-align: center
 	.wrap
 		width: 430px
+		margin: 0 auto
 		&-discr
 			margin-top: 2.6em
 			font-size: 23px
@@ -124,7 +134,10 @@
 					margin-right: 0
 				&-text
 					text-align: center
-	
+	.portfolio
+		&-item
+			&__video
+				margin-right: 0
 @media (max-width: 456px)
 	.header
 		&-text
@@ -210,7 +223,7 @@
 			height: 505px
 			padding: 24px 25px
 			&__discr
-				font-size: 13px
+				font-size: 15px
 			&__img
 				background-size: 86%
 				margin: 0
@@ -254,6 +267,12 @@
 			&__list
 				&-text
 					font-size: 17px
+	.portfolio
+		&-title
+			font-size: 42px
+	.portfolio
+		&-filter
+			height: 4.5em
 // @media (max-width: 320px)
 
 

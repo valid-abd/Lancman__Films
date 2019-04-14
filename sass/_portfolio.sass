@@ -1,0 +1,93 @@
+.active 
+	color: #cccccc
+	&:after
+		content: ''
+		height: 2px
+		width: 100% !important
+		background-color: #fff
+		position: relative
+		// display: block
+		top: 2px
+		opacity: 0
+		transition: .5s
+	
+.portfolio
+	// height: 700px
+	background-color: $black
+	padding: 54px 0
+	&-title
+		text-align: center
+		font-size: 48px
+		letter-spacing: 2.88px
+		+Code-Pro-Regular
+	&-filter
+		display: flex
+		flex-wrap: wrap
+		margin-top: 25px
+		&__item
+			margin-right: 25px
+			cursor: pointer
+			+Code-Pro_Regular
+			position: relative
+			transition: 1s
+			&:after
+				content: ""
+				width: 0%
+				opacity: 1
+				margin: 0 auto
+				transition: .5s
+				border-radius: 2% 
+				display: block
+			&:hover
+				transition: .5s
+				color: $light-gray
+	&-content
+		margin-top: 35px
+	&-item 						
+		// transition: 1.5s
+		display: flex
+		justify-content: left
+		flex-wrap: wrap
+		&__video			// начало блока портфолио для видео 
+			width: 270px
+			height: 300px
+			// transition: 3s
+			background-color: #fff
+			border: 1px solid #000
+				// radius: 10px
+			border-radius: 10px 10px 10px 10px
+			margin-top: 25px
+			margin-right: 20px
+			// margin: 0 15px
+			&-img
+				height: 80%
+				background-color: #cccccc
+				position: relative
+				&:after
+					content: ''
+					width: 100%
+					height: 100%
+					background:
+						image: url('../img/video.png')
+						repeat: no-repeat
+						position: center
+						size: cover
+					position: absolute
+					opacity: 0
+					transition: .2s
+				&:hover
+					// transition: .5s
+					&:after
+						opacity: 1
+			&-text
+				height: 20%
+				margin-top: 12px
+				&__title
+					text-align: center
+					color: $black
+				&__subtitle
+					margin-top: 6px
+					color: $black
+				
+
+		

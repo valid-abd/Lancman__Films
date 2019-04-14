@@ -8,6 +8,7 @@
 	<!--CSS-->
 	<link rel="stylesheet" href="./css/style.min.css">
 	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/jquery.fancybox.min.css">
 	<title>Lancman Films</title>
 	<!-- Yandex.Metrika counter -->
 	<script
@@ -18,7 +19,7 @@
 </head>
 <body>
 	
-	<header class="header" data-rellax-speed="1">	
+	<header class="header" data-rellax-speed="1" data-vide-bg="./video/fongit">	
 		<nav class="main">
 			<div class="container-main container">
 				<div class="main-logo"></div>
@@ -160,7 +161,7 @@
 					<div class="team-person">
 						<div class="team-person__img team-person__img-1"></div>
 						<div class="team-person__name">Игорь <br> Ланцман</div>
-						<div class="team-person__skill">Оператор <span>Монтажер</span> </div>
+						<div class="team-person__skill">Основатель <span></span> </div>
 						<!-- <div class="team-person__messenger">
 							<a href="" class="team-person__messenger-icon team-person__messenger-inst"></a>					
 							<a href="" class="team-person__messenger-icon team-person__messenger-vk"></a>
@@ -234,7 +235,7 @@
 				</div>
 				<!-- /.slider -->
 				
-				<div class="slider">
+				<!-- <div class="slider">
 					<h3 class="slider-title">Презентационный</h3>
 					<div class="slider-img slider-img__4"></div>
 					<p class="slider-subtitle">Фильм о компании, её достижениях, руководстве и сотрудниках.
@@ -242,7 +243,7 @@
 					<div class="slider-price">от<span class="slider-price__number">9950</span></div>
 					<button class="slider-button slider-btn">Заказать</button>
 				</div>
-				<!-- /.slider -->
+				/.slider -->
 				
 				<div class="slider">
 					<h3 class="slider-title">рекламный</h3>
@@ -253,6 +254,54 @@
 					<button class="slider-button slider-btn">Заказать</button>
 				</div>
 				<!-- /.slider -->
+					<div class="slider">
+						<h3 class="slider-title">имиджевый</h3>
+						<div class="slider-img slider-img__1"></div>
+						<p class="slider-subtitle">Демонстрация специфики вашего бизнеса и услуг.
+							Создания имиджа компании и повышения доверия клиентов.</p>
+						<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+						<button class="slider-button slider-btn">Заказать</button>
+					</div>
+					<!-- /.slider -->
+					
+					<div class="slider">
+						<h3 class="slider-title">видеоотчет</h3>
+						<div class="slider-img slider-img__2"></div>
+						<p class="slider-subtitle">Яркий эмоциональный фильм и/или клип с Вашего мероприятия.</p>
+						<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+						<button class="slider-button slider-btn">Заказать</button>
+					</div>
+					<!-- /.slider -->
+					
+					<div class="slider">
+						<h3 class="slider-title">Музыкальный клип</h3>
+						<div class="slider-img slider-img__3"></div>
+						<p class="slider-subtitle">Постановочная съемка клипа под вашу композицию.</p>
+						<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+						<button class="slider-button slider-btn">Заказать</button>
+					</div>
+					<!-- /.slider -->
+					
+					<!-- <div class="slider">
+										<h3 class="slider-title">Презентационный</h3>
+										<div class="slider-img slider-img__4"></div>
+										<p class="slider-subtitle">Фильм о компании, её достижениях, руководстве и сотрудниках.
+										Используется на выставках, бизнес-форумах, и т.д.</p>
+										<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+										<button class="slider-button slider-btn">Заказать</button>
+									</div>
+									/.slider -->
+					
+					<div class="slider">
+						<h3 class="slider-title">рекламный</h3>
+						<div class="slider-img slider-img__5"></div>
+						<p class="slider-subtitle">Предоставить целевой аудитории наглядную информацию о
+							Ваших продуктах и услугах.</p>
+						<div class="slider-price">от<span class="slider-price__number">9950</span></div>
+						<button class="slider-button slider-btn">Заказать</button>
+					</div>
+					<!-- /.slider -->
+
 
 			</div>
 			<!-- /.prace-wrap -->
@@ -260,6 +309,234 @@
 		<!-- /.container -->
 	</div>
 	<!-- /.price -->
+
+	<div class="portfolio">
+		<div class="container">
+			<div class="portfolio-title">Портфолио</div>
+			<div class="portfolio-tabs">
+
+				<div class="portfolio-filter">
+					<span class="portfolio-filter__item filter-item">Рекламное</span>
+					<span class="portfolio-filter__item filter-item">Имиджевое</span>
+					<span class="portfolio-filter__item filter-item">Видеоотчет</span>
+					<span class="portfolio-filter__item filter-item">Презентанционное</span>
+					<span class="portfolio-filter__item filter-item">Музыкольное</span>
+				</div>
+				<!-- /.portfolio-filter -->
+
+				<div class="portfolio-content">
+
+					<article class="portfolio-item content-item">
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 1</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 2</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 3</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 4</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 5</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+					</article> 						<!--/.portfolio-item content-item-->
+
+					<article class="portfolio-item content-item">
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 3</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 4</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 5</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+					</article>   					<!--/.portfolio-item content-item-->
+
+					<article class="portfolio-item content-item">
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 2</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 3</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+					</article>  			<!--/.portfolio-item content-item--> 
+					<article class="portfolio-item content-item">
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 1</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 2</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 3</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+					</article> 			 <!--/.portfolio-item content-item-->
+					<article class="portfolio-item content-item">
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 1</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 2</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 3</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 4</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+						
+						<div class="portfolio-item__video">
+							<div class="portfolio-item__video-img"></div>
+							<div class="portfolio-item__video-text">
+								<h4 class="portfolio-item__video-text__title">Заголовок 5</h4>
+								<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+							</div>
+						</div>
+						<!-- /.portfolio-item__video -->
+					</article> <!--/.portfolio-item content-item-->
+						
+						
+						<article class="portfolio-item content-item">
+							<div class="portfolio-item__video">
+								<div class="portfolio-item__video-img"></div>
+								<div class="portfolio-item__video-text">
+									<h4 class="portfolio-item__video-text__title">Заголовок 3</h4>
+									<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+								</div>
+							</div>
+							<!-- /.portfolio-item__video -->
+						
+							<div class="portfolio-item__video">
+								<div class="portfolio-item__video-img"></div>
+								<div class="portfolio-item__video-text">
+									<h4 class="portfolio-item__video-text__title">Заголовок 4</h4>
+									<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+								</div>
+							</div>
+							<!-- /.portfolio-item__video -->
+						
+							<div class="portfolio-item__video">
+								<div class="portfolio-item__video-img"></div>
+								<div class="portfolio-item__video-text">
+									<h4 class="portfolio-item__video-text__title">Заголовок 5</h4>
+									<div class="portfolio-item__video-text__subtitle">описание подзаголовка</div>
+								</div>
+							</div>
+							<!-- /.portfolio-item__video -->
+					</article> 			 <!--/.portfolio-item content-item-->
+				</div>
+				<!-- /.portfolio-content -->
+
+			</div>
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.portfolio -->
+
+
+
+	
 
 	<div class="connection" id="6">
 		<div class="container">
@@ -363,6 +640,8 @@
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
 <!-- <script src="./js/rellax.min.js"></script> -->
+<script src="./js/jquery.vide.min.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
 <script src="./js/jquery.mask.min.js"></script>
 <script src="./js/slick.min.js"></script>
 <script src="./js/slider.js"></script>
@@ -453,6 +732,17 @@
 			);
 			//ввод только букв в формма ввода
 	</script> 
+
+	<script>
+
+		$(".content-item").not(":first").hide();
+		$(".portfolio-tabs .filter-item").click(function () {
+			$(".portfolio-tabs .filter-item").removeClass("active").eq($(this).index()).addClass("active");
+			$(".content-item").hide().eq($(this).index()).fadeIn()
+		}).eq(0).addClass("active");
+
+
+	</script>
 	
 </body>
 </html>
