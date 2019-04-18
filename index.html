@@ -20,54 +20,56 @@
 <body>
 	
 	<header class="header" data-rellax-speed="1" data-vide-bg="./video/fon">	
-		<nav class="main">
-			<div class="container-main container">
-				<div class="main-logo"></div>
-				<div class="main-menu">
-					<ul class="main-menuList">
-						<!-- <li class="main-menuList__item"><a href="#1">Главная</a></li> -->
-						<li class="main-menuList__item"><a href="#mouse2">О студии</a></li>
-						<li class="main-menuList__item"><a href="#3">Команда</a></li>
-						<li class="main-menuList__item"><a href="#4">Наши услуги</a></li>
-						<li class="main-menuList__item"><a href="#5">Портфолио</a></li>
-						<li class="main-menuList__item"><a href="#6">Контакты</a></li>
-					</ul>
-				</div>
-
-			
-					<div class="main-button">
-						<a href="#" class="main-button__icon">
-							<span class="main-button__span"></span>
-						</a>
-					</div>
-				<div class="main-mobile">
-						<ul class="main-mobileMenu">
-
-						<li class="main-mobileMenu__item"><a href="#mouse2">О студии</a></li>
-						<li class="main-mobileMenu__item"><a href="#3">Команда</a></li>
-						<li class="main-mobileMenu__item"><a href="#3">Наши услуги</a></li>
-						<li class="main-mobileMenu__item"><a href="#4">Портфолио</a></li>
-						<li class="main-mobileMenu__item"><a href="#5">Контакты</a></li>
+		<header class="mobileVideoBackground" data-rellax-speed="1"  data-vide-bg="./video/comercial"></header>
+			<nav class="main">
+				<div class="container-main container">
+					<div class="main-logo"></div>
+					<div class="main-menu">
+						<ul class="main-menuList">
+							<!-- <li class="main-menuList__item"><a href="#1">Главная</a></li> -->
+							<li class="main-menuList__item"><a href="#mouse2">О студии</a></li>
+							<li class="main-menuList__item"><a href="#3">Команда</a></li>
+							<li class="main-menuList__item"><a href="#4">Наши услуги</a></li>
+							<li class="main-menuList__item"><a href="#5">Портфолио</a></li>
+							<li class="main-menuList__item"><a href="#6">Контакты</a></li>
 						</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- /.main -->
-		<nav class="header-mobile"></nav>
+					</div>
 
-			<div class="header-text" id="1"> 
-				<h1 class="header-text__title">
-					Задумывались ли Вы <br class="br-none"> сколько потенциональных <br class="br-none"> клиентов теряете ?
-				</h1>
-			</div>	
-			<!-- /.header-text -->
-	
-		<div>
-			<a href="#mouse2"  class="header-maus"></a>
-		</div>
-			<!-- <span class="header-maus__wheel"></span> -->
-		<!-- </div> -->
-		<!-- /.header-maus -->
+				
+						<div class="main-button">
+							<a href="#" class="main-button__icon">
+								<span class="main-button__span"></span>
+							</a>
+						</div>
+					<div class="main-mobile">
+							<ul class="main-mobileMenu">
+
+							<li class="main-mobileMenu__item"><a href="#mouse2">О студии</a></li>
+							<li class="main-mobileMenu__item"><a href="#3">Команда</a></li>
+							<li class="main-mobileMenu__item"><a href="#3">Наши услуги</a></li>
+							<li class="main-mobileMenu__item"><a href="#4">Портфолио</a></li>
+							<li class="main-mobileMenu__item"><a href="#5">Контакты</a></li>
+							</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- /.main -->
+			<nav class="header-mobile"></nav>
+
+				<div class="header-text" id="1"> 
+					<h1 class="header-text__title">
+						Задумывались ли Вы <br class="br-none"> сколько потенциональных <br class="br-none"> клиентов теряете ?
+					</h1>
+				</div>	
+				<!-- /.header-text -->
+		
+			<div>
+				<a href="#mouse2"  class="header-maus"></a>
+			</div>
+				<!-- <span class="header-maus__wheel"></span> -->
+			<!-- </div> -->
+			<!-- /.header-maus -->
+		
 	</header>
 	<!-- /.header -->
 	<div class="studio" data-rellax-speed="4" id="mouse2">
@@ -637,14 +639,23 @@
 	</div>
 </div>
 											
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
 <!-- <script src="./js/rellax.min.js"></script> -->
 <script src="./js/jquery.vide.min.js"></script>
 <script src="./js/jquery.fancybox.min.js"></script>
 <script src="./js/jquery.mask.min.js"></script>
 <script src="./js/slick.min.js"></script>
 <script src="./js/slider.js"></script>
+
+<script>
+	$(window).resize(function () {
+			if ($(window).width() < "425") {
+				$(".header").attr('data-vide-bg', 'video/ocean');
+				
+		}});
+
+</script>
 
 <script>
 	$('form').submit(function (event) {
