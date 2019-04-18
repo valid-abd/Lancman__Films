@@ -51,18 +51,19 @@
 		&__video			// начало блока портфолио для видео 
 			width: 270px
 			height: 300px
-			// transition: 3s
-			background-color: #fff
-			border: 1px solid #000
-				// radius: 10px
-			border-radius: 10px 10px 10px 10px
+			border: 1px solid #6b6666
 			margin-top: 25px
 			margin-right: 20px
-			// margin: 0 15px
 			&-img
 				height: 80%
-				background-color: #cccccc
+				background:
+					// color: #cccccc
+					image: url('../img/modal/logo.png')
+					repeat: no-repeat
+					size: 134%
+					position: center
 				position: relative
+
 				&:after
 					content: ''
 					width: 100%
@@ -73,21 +74,28 @@
 						position: center
 						size: cover
 					position: absolute
-					opacity: 0
+					// opacity: 0
 					transition: .2s
+					transform: scale(0)
+
 				&:hover
 					// transition: .5s
+					transform: scale(1)
+
 					&:after
-						opacity: 1
+						transform: scale(1)
+
 			&-text
 				height: 20%
-				margin-top: 12px
+				padding-top: 12px
 				&__title
 					text-align: center
-					color: $black
+					color: $white
+					+Code-Pro-Regular
 				&__subtitle
 					margin-top: 6px
-					color: $black
+					color: $white
+					text-align: center
 				
 
 		
