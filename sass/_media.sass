@@ -10,6 +10,10 @@
 			justify-content: center
 
 @media (max-width: 992px)
+	.main
+		&-menuList
+			&__item
+				margin-left: 19px
 	.section
 		height: auto
 	.communication
@@ -98,7 +102,9 @@
 @media (max-width: 576px) 
 	.mobileVideoBackground //видео фон для мобильников
 		display: block
-
+	.main
+		&-icon
+			left: 30%
 	.container
 		width: 98%
 	.header
@@ -153,6 +159,8 @@
 			&__item
 				& a 
 					font-size: 30px
+		&-icon
+			left: 35%
 	.wrap
 		width: 315px
 		padding: 40px 23px
@@ -255,6 +263,7 @@
 		&-subtitle
 			margin: 15px 22px 0 22px
 			font-size: 15px
+
 	.team
 		&-title
 			margin-bottom: 50px
@@ -277,6 +286,5 @@
 	.portfolio
 		&-filter
 			height: 4.5em
-// @media (max-width: 320px)
 
 
